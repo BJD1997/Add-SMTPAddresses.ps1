@@ -46,8 +46,8 @@ Find me on:
 * Github:	https://github.com/cunninghamp
 #>
 
+# Checj=k if Exchange Online Management Module is installed, if not install the module.
 Write-Host "Checking if module ExchangeOnlineManagement exists"
-
 if (Get-Module -ListAvailable -Name ExchangeOnlineManagement) {
     Write-Host "Module ExchangeOnlineManagement exists"
 } 
@@ -57,7 +57,7 @@ else {
     Write-Host "Module ExchangeOnlineManagement Installed"
 }
 
-#Connect & Login to ExchangeOnline (MFA)
+# Connect & Login to ExchangeOnline (MFA)
 $getsessions = Get-PSSession | Select-Object -Property State, Name
 $isconnected = (@($getsessions) -like '@{State=Opened; Name=ExchangeOnlineInternalSession*').Count -gt 0
 If ($isconnected -ne "True") {
