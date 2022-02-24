@@ -50,7 +50,7 @@ Modified by: Bauke-Jan Davids
 
 Find me on:
 
-* Twitter:	hhttps://twitter.com/bjdavids97
+* Twitter:	https://twitter.com/bjdavids97
 * LinkedIn:	https://www.linkedin.com/in/bauke-jan-d-b40aa0116/
 * Github:	https://github.com/BJD1997
 
