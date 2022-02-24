@@ -5,6 +5,11 @@ This PowerShell script will add new SMTP addresses to existing Office 365 mailbo
 
 Results are output to a text log file.
 
+# Modifications made by me [(BJD1997)](https://github.com/BJD1997)
+
+- -Check if Exchange Online managemet module is installed, if not install it.
+- -Check if there is an active connection with Exchange Online, if not the run Connect-ExchangeOnline
+
 ## Parameters
 
 - -Domain, The new domain name to add SMTP addresses to each Office 365 mailbox user.
@@ -30,24 +35,29 @@ to all mailboxes. Use the log file to evaluate the outcome before you re-run wit
 This will add the new alias@office365bootcamp.com as a primary email address
 to all mailboxes.
 
+```
+.\Add-SMTPAddresses.ps1 -Domain office365bootcamp.com -Commit
+```
+This will add the new alias@office365bootcamp.com as alias email address
+to all mailboxes.
+
 ## More Information
-http://exchangeserverpro.com/add-smtpaddresses-ps1-bulk-add-smtp-addresses-to-office-365-mailbox-users
+https://practical365.com/add-smtpaddresses-ps1-bulk-add-smtp-addresses-to-office-365-mailbox-users/
 
 ## Credits
 Written by: Paul Cunningham
+Modified by: Bauke-Jan Davids
 
 Find me on:
 
-* My Blog:	https://paulcunningham.me
-* Twitter:	https://twitter.com/paulcunningham
-* LinkedIn:	https://au.linkedin.com/in/cunninghamp/
-* Github:	https://github.com/cunninghamp
+* Twitter:	hhttps://twitter.com/bjdavids97
+* LinkedIn:	https://www.linkedin.com/in/bauke-jan-d-b40aa0116/
+* Github:	https://github.com/BJD1997
 
-Check out my [books](https://paulcunningham.me/books/) and [courses](https://paulcunningham.me/training/) to learn more about Office 365 and Exchange Server.
 
 Additional contributors:
 - Scott Buchanan [GitHub](https://github.com/scottsb) | [Website](https://buchanan.works/)
 
 Additional references:
 
-- Tim McMichael's blog post: http://blogs.technet.com/b/timmcmic/archive/2015/05/17/office-365-bulk-update-email-addresses.aspx
+- Tim McMichael's blog post: [Wayback Machine](https://web.archive.org/web/20160115155810/http://blogs.technet.com/b/timmcmic/archive/2015/05/17/office-365-bulk-update-email-addresses.aspx) [Microsoft Technet Archive](https://docs.microsoft.com/nl-nl/archive/blogs/timmcmic/office-365-bulk-update-email-addresses)
