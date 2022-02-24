@@ -60,4 +60,4 @@ Additional contributors:
 
 Additional references:
 
-- Tim McMichael's blog post: [Wayback Machine](https://web.archive.org/web/20160115155810/http://blogs.technet.com/b/timmcmic/archive/2015/05/17/office-365-bulk-update-email-addresses.aspx) [Microsoft Technet Archive](https://docs.microsoft.com/nl-nl/archive/blogs/timmcmic/office-365-bulk-update-email-addresses)
+- Tim McMichael's blog post: [Wayback Machine](https://web.archive.org/web/20160115155810/http://blogs.technet.com/b/timmcmic/archive/2015/05/17/office-365-bulk-update-email-addresses.aspx) | [Microsoft Technet Archive](https://docs.microsoft.com/nl-nl/archive/blogs/timmcmic/office-365-bulk-update-email-addresses)
