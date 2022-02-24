@@ -46,6 +46,7 @@ https://practical365.com/add-smtpaddresses-ps1-bulk-add-smtp-addresses-to-office
 
 ## Credits
 Written by: Paul Cunningham
+
 Modified by: Bauke-Jan Davids
 
 Find me on:
