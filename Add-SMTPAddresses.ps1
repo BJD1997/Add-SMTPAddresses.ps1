@@ -67,6 +67,7 @@ If ($isconnected -ne "True") {
 }
 else {
     Write-Host "Already connected"
+}
 
 #requires -version 2
 
