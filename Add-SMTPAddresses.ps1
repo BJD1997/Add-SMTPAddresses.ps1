@@ -194,6 +194,23 @@ Foreach ($Mailbox in $Mailboxes)
     Write-Logfile ""
 }
 
+# Optional Disconnect Exchange Online Sessions
+$Confirm = Read-Host "Disconnect all Exchange Online sessions? [Y/N]"
+Switch ($Confirm) {
+    Y {
+    Write-Host "Disconnecting all Exchange Online sessions"
+    Get-PSSession | Where-Object {$_.name  -Like "ExchangeOnlineInternalSession*"} | Remove-PSSession
+    }
+
+    N {
+    Write-Host "All Exchange Sessions still active"
+    }
+
+    Default {
+    Write-Host "Invalid input"
+    }
+}
+
 #...................................
 # Finished
 #...................................
